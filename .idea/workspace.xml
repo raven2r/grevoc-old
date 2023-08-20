@@ -9,29 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edfb199d-3f1b-41e4-8d13-07ac8640130c" name="Changes" comment="Reworked Vocabulary class, added .gitignore in grevoc-core/, added Lingvanex translator, changes to Translator abstract class, reworked tests, other small changes">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grevoc-core/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/translator/Deepl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/translator/LanguagePair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/translator/Lingvanex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grevoc-core/src/test/java/me/raven/grevoc/core/translator/DeeplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grevoc-core/src/test/java/me/raven/grevoc/core/translator/LingvanexTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grevoc-core/src/test/java/me/raven/grevoc/core/translator/TranslatorManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grevoc-core/src/test/resources/apikeys.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grevoc-core/src/test/resources/config.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grevoc-core/src/test/resources/languages-response.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grevoc-core/src/test/resources/log4j2-test.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/standards.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grevoc-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/grevoc-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/Vocabulary.java" beforeDir="false" afterPath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/Vocabulary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/translator/Debug.java" beforeDir="false" afterPath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/translator/Debug.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/translator/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/translator/Translator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/translator/Translators.java" beforeDir="false" afterPath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/translator/TranslatorManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grevoc-core/src/test/java/me/raven/grevoc/core/VocabularyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/grevoc-core/src/test/java/me/raven/grevoc/core/VocabularyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grevoc-core/src/test/java/me/raven/grevoc/core/translator/TranslatorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/grevoc-core/src/test/java/me/raven/grevoc/core/translator/TranslatorsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/Core.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,6 +207,8 @@
       <workItem from="1690105306387" duration="7046000" />
       <workItem from="1690230663240" duration="20772000" />
       <workItem from="1691361547083" duration="1997000" />
+      <workItem from="1692565230876" duration="433000" />
+      <workItem from="1692565693619" duration="461000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit, work in progress">
       <created>1683592650036</created>
