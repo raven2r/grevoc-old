@@ -1,0 +1,6 @@
+/target
+/javadoc
+/src/test/resources/apikeys.properties
+/src/test/resources/keys.properties
+/src/test/resources/config.ini
+/src/test/resources/dont_add_me.txt

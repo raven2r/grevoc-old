@@ -1,0 +1,16 @@
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config" name="TestLogConfig">
+    <Appenders>
+        <Console name="console-appender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%level: %c: %m%n" />
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="me.raven.grevoc.core" level="trace" additivity="false">
+            <AppenderRef ref="console-appender"/>
+        </Logger>
+        <Root level="error">
+            <AppenderRef ref="console-appender"/>
+        </Root>
+    </Loggers>
+</Configuration>

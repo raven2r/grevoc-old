@@ -1,0 +1,6 @@
+allcom	ALLCOM|ocllam	5
+foreword	FOREWORD	1
+maco	MACO|omac	1
+musor	MUSOR|surmo	3
+tabaco	TABACO|ctobaa|abcaot|catoba|cboata	1
+taco	TACO|aoct|otac	1

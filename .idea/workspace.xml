@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
+    <option name="SCOPE_TYPE" value="4" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="edfb199d-3f1b-41e4-8d13-07ac8640130c" name="Changes" comment="Reworked Vocabulary class, added .gitignore in grevoc-core/, added Lingvanex translator, changes to Translator abstract class, reworked tests, other small changes">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grevoc-core/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/translator/Deepl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/translator/LanguagePair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/translator/Lingvanex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grevoc-core/src/test/java/me/raven/grevoc/core/translator/DeeplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grevoc-core/src/test/java/me/raven/grevoc/core/translator/LingvanexTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grevoc-core/src/test/java/me/raven/grevoc/core/translator/TranslatorManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grevoc-core/src/test/resources/apikeys.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grevoc-core/src/test/resources/config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grevoc-core/src/test/resources/languages-response.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grevoc-core/src/test/resources/log4j2-test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/standards.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grevoc-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/grevoc-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/Vocabulary.java" beforeDir="false" afterPath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/Vocabulary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/translator/Debug.java" beforeDir="false" afterPath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/translator/Debug.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/translator/Translator.java" beforeDir="false" afterPath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/translator/Translator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/translator/Translators.java" beforeDir="false" afterPath="$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/translator/TranslatorManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grevoc-core/src/test/java/me/raven/grevoc/core/VocabularyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/grevoc-core/src/test/java/me/raven/grevoc/core/VocabularyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grevoc-core/src/test/java/me/raven/grevoc/core/translator/TranslatorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/grevoc-core/src/test/java/me/raven/grevoc/core/translator/TranslatorsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$/grevoc-gui" value="side0" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2PA1Eb7mPnymXcnSYUJZwZx4UZ3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/UNIVERSAL/WORK/STUDY/PROGRAMMING/JAVA/PROJECT/OWN/grevoc&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\UNIVERSAL\WORK\STUDY\PROGRAMMING\JAVA\PROJECT\grevoc\grevoc-core" />
+      <recent name="G:\UNIVERSAL\WORK\STUDY\PROGRAMMING\JAVA\PROJECT\grevoc\grevoc-core\src\test" />
+      <recent name="G:\UNIVERSAL\WORK\STUDY\PROGRAMMING\JAVA\PROJECT\grevoc\grevoc-core\src\test\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\UNIVERSAL\WORK\STUDY\PROGRAMMING\JAVA\PROJECT\OWN\grevoc\grevoc-core\src\test\resources" />
+      <recent name="G:\UNIVERSAL\WORK\STUDY\PROGRAMMING\JAVA\PROJECT\grevoc\grevoc-core\src\test\resources" />
+      <recent name="G:\UNIVERSAL\WORK\STUDY\PROGRAMMING\JAVA\PROJECT\grevoc\grevoc-core\target\test-classes\me" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="me.raven.grevoc.core.translator" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.LingvanexTest.checkByCountForAlphaCode1CollisionsDefinition">
+    <configuration name="LingvanexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.raven.grevoc.core.translator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="me.raven.grevoc.core.translator" />
+      <option name="MAIN_CLASS_NAME" value="me.raven.grevoc.core.translator.LingvanexTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LingvanexTest.checkAlphaCode1FormatVerifier" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.raven.grevoc.core.translator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="me.raven.grevoc.core.translator" />
+      <option name="MAIN_CLASS_NAME" value="me.raven.grevoc.core.translator.LingvanexTest" />
+      <option name="METHOD_NAME" value="checkAlphaCode1FormatVerifier" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LingvanexTest.checkByCountForAlphaCode1CollisionsDefinition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.raven.grevoc.core.translator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="me.raven.grevoc.core.translator" />
+      <option name="MAIN_CLASS_NAME" value="me.raven.grevoc.core.translator.LingvanexTest" />
+      <option name="METHOD_NAME" value="checkByCountForAlphaCode1CollisionsDefinition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VocabularyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.raven.grevoc.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="me.raven.grevoc.core" />
+      <option name="MAIN_CLASS_NAME" value="me.raven.grevoc.core.VocabularyTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordlistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.raven.grevoc.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="me.raven.grevoc.core" />
+      <option name="MAIN_CLASS_NAME" value="me.raven.grevoc.core.WordlistTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.LingvanexTest" />
+      <item itemvalue="JUnit.LingvanexTest.checkAlphaCode1FormatVerifier" />
+      <item itemvalue="JUnit.LingvanexTest.checkByCountForAlphaCode1CollisionsDefinition" />
+      <item itemvalue="JUnit.VocabularyTest" />
+      <item itemvalue="JUnit.WordlistTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LingvanexTest.checkByCountForAlphaCode1CollisionsDefinition" />
+        <item itemvalue="JUnit.LingvanexTest.checkAlphaCode1FormatVerifier" />
+        <item itemvalue="JUnit.LingvanexTest" />
+        <item itemvalue="JUnit.VocabularyTest" />
+        <item itemvalue="JUnit.WordlistTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="edfb199d-3f1b-41e4-8d13-07ac8640130c" name="Changes" comment="" />
+      <created>1682884964179</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682884964179</updated>
+      <workItem from="1684326754457" duration="448000" />
+      <workItem from="1684327224740" duration="458000" />
+      <workItem from="1684327713281" duration="673000" />
+      <workItem from="1684328410287" duration="1459000" />
+      <workItem from="1685374402877" duration="10086000" />
+      <workItem from="1685665274569" duration="282000" />
+      <workItem from="1685911033752" duration="34877000" />
+      <workItem from="1686184399468" duration="76822000" />
+      <workItem from="1689065497408" duration="1183000" />
+      <workItem from="1689176962610" duration="1606000" />
+      <workItem from="1690062774879" duration="2375000" />
+      <workItem from="1690105306387" duration="7046000" />
+      <workItem from="1690230663240" duration="20772000" />
+      <workItem from="1691361547083" duration="1997000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit, work in progress">
+      <created>1683592650036</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683592650036</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Made grevoc-gui grevoc's module in pom.xml's">
+      <created>1683593348050</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683593348050</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Removed compress() from Vocabulary class&#10;Partly Javadoc is added">
+      <created>1683827127174</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683827127174</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Vocabulary now has static array of supported language paris&#10;visual VocabularyTest for appending via WordList added&#10;Access modifiers of words and occurrences in WordList are protected">
+      <created>1683925368395</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683925368395</updated>
+    </task>
+    <task id="LOCAL-00005" summary="WordList's words and occurrences fields are private&#10;Vocabulary doesn't extend WordList anymore">
+      <created>1683925504199</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683925504199</updated>
+    </task>
+    <task id="LOCAL-00006" summary="@Override removed in Vocabulary">
+      <created>1683925536267</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683925536267</updated>
+    </task>
+    <task id="LOCAL-00007" summary="field Map supported_language_pairs and it's functions is removed">
+      <created>1683925898349</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683925898349</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Vocabulary is now a 'model' and not performs translations">
+      <created>1683983459033</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683983459033</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added new mutation methods, words_ translationsArrayList replaced with Set, added new and fixed some VocabulayTest's methods">
+      <created>1684088372014</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684088372015</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit, work in progress" />
+    <MESSAGE value="Made grevoc-gui grevoc's module in pom.xml's" />
+    <MESSAGE value="Removed compress() from Vocabulary class&#10;Partly Javadoc is added" />
+    <MESSAGE value="Vocabulary now has static array of supported language paris&#10;visual VocabularyTest for appending via WordList added&#10;Access modifiers of words and occurrences in WordList are protected" />
+    <MESSAGE value="WordList's words and occurrences fields are private&#10;Vocabulary doesn't extend WordList anymore" />
+    <MESSAGE value="@Override removed in Vocabulary" />
+    <MESSAGE value="field Map supported_language_pairs and it's functions is removed" />
+    <MESSAGE value="Vocabulary is now a 'model' and not performs translations" />
+    <MESSAGE value="Added new mutation methods, words_ translationsArrayList replaced with Set, added new and fixed some VocabulayTest's methods" />
+    <MESSAGE value="Reworked Vocabulary class, added .gitignore in grevoc-core/, added Lingvanex translator, changes to Translator abstract class, reworked tests, other small changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reworked Vocabulary class, added .gitignore in grevoc-core/, added Lingvanex translator, changes to Translator abstract class, reworked tests, other small changes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/grevoc-core/src/main/java/me/raven/grevoc/core/translator/Deepl.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
